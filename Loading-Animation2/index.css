@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square{
+    height: 60px;
+    width: 60px;
+    margin: 1em;
+    border: 1px solid;
+    transform: rotate(45deg);
+    animation: rotate 1.5s alternate infinite;
+}
+
+.square-1{
+    background-color: orange;
+}
+
+.square-2{
+    background-color: deeppink;
+}
+
+.square-3{
+    background-color: brown;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle-wrap{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggle-btn{
+    display: none;
+}
+
+label{
+    height: 60px;
+    width: 160px;
+    border: 2px solid;
+    padding: 4px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.toggle-switch{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#toggle-btn:checked ~ .toggle-switch{
+    transform: translateX(90px);
+}

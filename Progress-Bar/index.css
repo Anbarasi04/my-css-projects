@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.progress-bar{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    border: 1px solid;
+    border-radius: 40px;
+}
+
+.prog-stats{
+    border-radius: 40px;
+    animation: progress 5s linear infinite;
+}
+    
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 25%;
+        background-color: yellow;
+    }
+    50% {
+        width: 50%;
+        background-color: purple;
+    }
+    75% {
+        width: 75%;
+        background-color: orange;
+    }
+    100% {
+        width: 100%;
+        background-color: green;
+    }
+}
+

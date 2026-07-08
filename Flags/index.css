@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+:root{
+    --flag-height: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.flag-france{
+    display: flex;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+}
+
+.flag-germany{
+    display: flex;
+    flex-direction: column;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+}
+
+.stripe{
+    flex-grow: 1;
+}
+
+.black{
+    background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: darkblue;
+}
+
+.white, .stripe-white{
+    background-color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.green{
+    background-color: green;
+}
+
+.stripe-white{
+    grid-row: 1 / 3;
+}
+
+.spl-flag{
+    display: grid;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.flag-switz{
+    width: var(--flag-height);
+    background-color: red;
+}
+
+.flag{
+    display: flex;
+    height: var(--flag-height);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+.flag-japan{
+    width: calc(var(--flag-height) * 1.5);
+    background-color: white;
+}
+
+.flag-swen{
+    width: calc(var(--flag-height) * 8 / 5);
+    background-color: #0269a6;
+}
+
+.col1{
+    background-color: white;
+    height: calc(var(--flag-height)* 3 / 16);
+    width: calc(var(--flag-height)* 5 / 8);
+}
+
+.col2{
+    height: calc(var(--flag-height)* 3 / 16);
+    width: calc(var(--flag-height)* 5 / 8);
+    transform: rotate(90deg);
+    position: absolute;
+    background-color: white;
+}
+
+.stripe1{
+    height: calc(var(--flag-height) * 0.2);
+    width: 100%;
+    background-color: yellow;
+}
+
+.stripe2{
+    height: 100%;
+    width: calc(var(--flag-height) * 0.2);
+    position: absolute;
+    background-color: yellow;
+    transform: translateX(-50px);
+}
+
+.japan{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+.flag-niger{
+    display: grid;
+    height: 200px;
+    width: 200px;
+}
+
+.stripe-orange{
+    background-color: #e15307;
+}
+
+.cent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e15307;
+}

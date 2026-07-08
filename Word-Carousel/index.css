@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-cont{
+    display: flex;
+}
+
+h1::after{
+    content: " ";
+    margin-left: 3px;
+    background-color: aqua;
+    padding: 3px 5px;
+    border-radius: 5px;
+    animation: content 5s infinite;
+}
+
+@keyframes content {
+    20%{
+        content: "Coding";
+    }
+    40%{
+        content: "Reading";
+    }
+    60%{
+        content: "Writing";
+    }
+    100%{
+        content: "practising";
+    }
+}
