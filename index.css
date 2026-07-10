@@ -12,6 +12,7 @@
 
 .container{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: auto;
     margin-top: 15px;
@@ -20,7 +21,7 @@
 }
 
 .card{
-    max-width: 350px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
