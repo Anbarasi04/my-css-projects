@@ -61,3 +61,10 @@
 .bottom{
     transform: rotate(180deg);
 }
+
+@media screen and (max-width:799px){
+     .cards-container{
+        flex-direction: column;
+        padding: 20px 0;
+     }
+}
