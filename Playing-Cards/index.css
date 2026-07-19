@@ -24,8 +24,11 @@
     border: 1px solid;
     font-size: 2em;
     display: grid;
+    padding: 10px;
+    overflow: hidden;
     grid-template-rows: auto 1fr auto;
     border-radius: 5px;
+    position: relative;
 }
 
 .card-heart{
@@ -35,9 +38,12 @@
     border: 1px solid;
     font-size: 2em;
     display: grid;
+    padding: 10px;
+    overflow: hidden;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 1fr;
     border-radius: 5px;
+    position: relative;
 }
 
 .middle{
