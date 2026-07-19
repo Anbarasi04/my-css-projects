@@ -24,6 +24,7 @@
     border: 1px solid;
     font-size: 2em;
     display: grid;
+    grid-template-rows: auto 1fr auto;
     border-radius: 5px;
 }
 
@@ -35,6 +36,7 @@
     font-size: 2em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
     border-radius: 5px;
 }
 
@@ -52,7 +54,6 @@
     justify-content: center;
     font-size: 2.3em;
 }
-
 
 .top, .bottom{
     padding: 10px;  
