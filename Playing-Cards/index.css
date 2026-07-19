@@ -74,4 +74,8 @@
         flex-direction: column;
         padding: 20px 0;
      }
+
+     .card{
+        height: 375px;
+     }
 }
